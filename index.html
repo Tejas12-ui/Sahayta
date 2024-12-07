@@ -3,20 +3,22 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sahayta - AI-Powered Small Business Solutions</title>
-  <link rel="stylesheet" href="styles.css">
+  <title>Sahayta - AI Solutions for Small Businesses</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
   <!-- Header -->
   <header>
     <div class="container">
-      <h1>Sahayta</h1>
+      <div class="logo">
+        <h1>Sahayta</h1>
+      </div>
       <nav>
         <ul>
           <li><a href="#home">Home</a></li>
-          <li><a href="#about">About Us</a></li>
           <li><a href="#services">Services</a></li>
-          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#about">About</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
@@ -25,60 +27,66 @@
 
   <!-- Hero Section -->
   <section id="home" class="hero">
-    <div class="container">
+    <div class="hero-content">
       <h2>Empowering Small Businesses with AI</h2>
-      <p>Grow smarter with Sahayta – your digital partner in enhancing online presence.</p>
-      <a href="#services" class="btn">Get Started</a>
-      <a href="#about" class="btn secondary">Learn More</a>
+      <p>Your digital partner for online growth and success.</p>
+      <a href="#services" class="btn">Explore Services</a>
+      <a href="#contact" class="btn secondary">Get a Quote</a>
     </div>
   </section>
 
-  <!-- About Us -->
-  <section id="about">
-    <div class="container">
-      <h2>About Us</h2>
-      <p>At Sahayta, we believe small businesses deserve big opportunities. Our AI-powered solutions help you establish or improve your online presence efficiently.</p>
-    </div>
-  </section>
-
-  <!-- Services -->
+  <!-- Services Section -->
   <section id="services">
     <div class="container">
       <h2>Our Services</h2>
+      <p>AI-powered solutions tailored for small businesses.</p>
       <div class="services-grid">
-        <div class="service">
+        <div class="service-card">
           <h3>Website Development</h3>
-          <p>AI-powered websites designed for optimal performance and user experience.</p>
+          <p>Build fast, responsive websites optimized for growth.</p>
+          <button class="btn learn-more" data-service="website-development">Learn More</button>
         </div>
-        <div class="service">
+        <div class="service-card">
           <h3>Social Media Management</h3>
-          <p>Engage your audience with data-driven social media strategies.</p>
+          <p>Boost engagement with AI-driven content strategies.</p>
+          <button class="btn learn-more" data-service="social-media">Learn More</button>
         </div>
-        <div class="service">
+        <div class="service-card">
           <h3>SEO Optimization</h3>
-          <p>Boost visibility and drive traffic with AI-driven insights.</p>
+          <p>Rank higher and drive organic traffic to your business.</p>
+          <button class="btn learn-more" data-service="seo">Learn More</button>
         </div>
-        <div class="service">
+        <div class="service-card">
           <h3>Digital Advertising</h3>
-          <p>Maximize efficiency with AI-enhanced targeting and analytics.</p>
+          <p>Target the right audience with AI-enhanced ad campaigns.</p>
+          <button class="btn learn-more" data-service="advertising">Learn More</button>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Portfolio -->
-  <section id="portfolio">
+  <!-- Modal for Service Details -->
+  <div id="service-modal" class="modal">
+    <div class="modal-content">
+      <span class="close-btn">&times;</span>
+      <h2 id="modal-title"></h2>
+      <p id="modal-description"></p>
+    </div>
+  </div>
+
+  <!-- About Section -->
+  <section id="about">
     <div class="container">
-      <h2>Portfolio</h2>
-      <p>Explore our success stories and case studies.</p>
+      <h2>About Us</h2>
+      <p>Sahayta is your trusted partner in leveraging AI to unlock growth for small businesses.</p>
     </div>
   </section>
 
-  <!-- Contact Us -->
+  <!-- Contact Section -->
   <section id="contact">
     <div class="container">
       <h2>Contact Us</h2>
-      <form action="#" method="post">
+      <form>
         <label for="name">Name:</label>
         <input type="text" id="name" name="name" required>
 
@@ -88,7 +96,7 @@
         <label for="message">Message:</label>
         <textarea id="message" name="message" rows="5" required></textarea>
 
-        <button type="submit">Send</button>
+        <button type="submit" class="btn">Send</button>
       </form>
     </div>
   </section>
@@ -99,6 +107,7 @@
       <p>&copy; 2024 Sahayta. All Rights Reserved.</p>
     </div>
   </footer>
-  <script src="script.js"></script>
+
+  <script src="js/script.js"></script>
 </body>
 </html>
